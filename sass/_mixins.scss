@@ -1,0 +1,16 @@
+@mixin tamaño { text-align: center;
+    display:grid;
+    grid-template-columns: min-content
+    }
+@mixin cartas { font-size: 20px;
+    font-family:"montserrat",sans-serif;
+    text-align: center;
+    
+}
+
+@mixin ww {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15px;
+  }
+    

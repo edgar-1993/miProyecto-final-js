@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Pagina</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Montserrat:ital,wght@0,200;1,200&family=Oswald:wght@700&family=Source+Code+Pro:wght@200&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Long+Cang&family=Oswald:wght@700&family=Source+Code+Pro:wght@200&display=swap"
+    rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lobster&family=Long+Cang&family=Oswald:wght@700&family=Source+Code+Pro:wght@200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="sass/style.css">
+
+
+  <meta name="description" content="Pasteleria de bodas y cumpleaños">
+  <meta name="keywords" content="cumpleaños,tortas,bodas,donas">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+</head>
+
+<body class="body animate__animated animate__fadeInRight">
+
+
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark menu">
+      <a class="navbar-brand" href="index.html"> <img src="imagenes/Logo Sticker.png" alt="log"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse secciones" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Productos.html">Productos</a>
+          </li>
+
+          <a data-toggle="modal-1" data-target="#carrito"><img src="imagenes/img.carrito.png" class="logocarritoo"
+              alt=""></a>
+
+
+
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+  </header>
+
+
+
+
+  <div class="container encabezado">
+    <div class="shadow-lg p-3 mb-5 rounded-container">
+      <h1 class="animate__animated animate__fadeInDown">Nuestros productos mas vendidos!</h1>
+    </div>
+  </div>
+
+  <div class="container divespacios2">
+    <div class="shadow-lg p-3 mb-5 rounded-container">
+      <h1 class="animate__animated animate__fadeInDownBig">Hamburguesas de carne</h1>
+    </div>
+  </div>
+  <div class="Productos">
+    <div class="carnes fotos">
+
+
+    </div>
+
+
+    <div class="container divespacios">
+      <div class="shadow-lg p-3 mb-5  rounded-container">
+        <h1 class="animate__animated animate__fadeInDownBig">Hamburguesas vegetarianas</h1>
+      </div>
+    </div>
+
+
+    <div class="vegetarianas fotos">
+
+    </div>
+
+  </div>
+  
+
+  <br>
+
+  <section role="dialog" id="carrito" class="shopping-cart modal">
+
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+
+        <div class="container carrito">
+          <h1 class="text-center fuente-carrito">CARRITO</h1>
+          <hr>
+
+
+          <div class="row ">
+            <div class="col-3">
+              <div class="shopping-cart-header">
+                <h6 class="fuente-carrito btn btn-success bg-dark disabled">Nombre</h6>
+
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="shopping-cart-header imagen-productos">
+                <h6 class="fuente-carrito btn btn-success bg-dark disabled">Imagen</h6>
+
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="shopping-cart-header ">
+                <h6 class="text-truncate fuente-carrito btn btn-success bg-dark disabled">Precio</h6>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="shopping-cart-header ">
+                <h6 class="fuente-carrito btn btn-success bg-dark disabled">Cantidad</h6>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+
+
+          <!--  aca inserto la lista de productos -->
+          <div class=" shopping-cart-items contenedor-carrito">
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="shopping-cart-total d-flex align-items-center">
+                <p class="mb-0 fuente-carrito">Total</p>
+
+
+
+                <p class="ml-4 mb-0 carrito-precio-total fuente-carrito">$</p>
+                <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                  data-delay="2000">
+                  <div class="toast-header">
+
+                  </div>
+
+                </div>
+                
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-success boton-comprar mb-3" data-toggle="modal" data-target="#exampleModalScrollable">
+  Comprar
+</button>
+
+<!-- Modal -->
+<div class="modal" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable " role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenteredLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h1 class="gracias">GRACIAS POR SU COMPRA!!</h1>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Seguir comprando</button>
+        <a type="button" class="btn btn-success" href="index.html">Terminar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+                
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </section>
+
+
+  <br>
+  <br>
+
+
+
+  <footer class="pie">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <p>Desarrollado por Edgar Espinola</p>
+
+
+        </div>
+        <div class="col-sm-4">
+          <p>Siguenos en nuestra redes!</p>
+
+        </div>
+        <div class="col-sm-4">
+
+          <div class="redes-sociales container">
+
+            <div><a href="" target="blank"><img src="imagenes/instagram (5).png" alt=""></a></div>
+
+            <div><a href="" target="blank"><img src="imagenes/facebook (2).png" alt=""></a></div>
+
+
+            <div><a href="https://api.whatsapp.com/send?phone=541134470765" target="blank"><img
+                  src="imagenes/whatsapp (4).png" alt=""></a></div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+  </footer>
+
+
+  <script src="jquery.min.js"></script>
+  <script src="app.js"></script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>

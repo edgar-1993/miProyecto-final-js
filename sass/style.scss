@@ -1,0 +1,373 @@
+$background-color-pie:#237A57;
+$font-family-subtitulos: 'Galada',
+cursive;
+$font-family-titulos:'Dancing Script',
+cursive;
+$font-family-parrafos:"montserrat",
+sans-serif;
+$color-colorfuente:white;
+$border-radius-bordesimg:2%;
+$font-size-parrafo-cartas:15px;
+
+$margin-top-espacios:6%;
+
+$margin-top-espacios2:3%;
+
+@import'mixins';
+
+/*tipografias*/
+h1 {
+    font-family: $font-family-titulos;
+    text-align: center;
+    color: $color-colorfuente
+}
+
+
+h2 {
+    font-family: $font-family-parrafos;
+    text-align: center;
+    color: white;
+
+}
+
+h5 {
+    text-align: center;
+    color: white;
+}
+
+
+p {
+    font-family: $font-family-parrafos;
+    font-size: 22px;
+    color: white;
+
+}
+
+.secciones {
+    ul {
+        li a {
+            font-family: $font-family-titulos;
+            font-size: 22px;
+
+
+        }
+    }
+}
+
+
+
+
+
+/*home*/
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+.body {
+    background-color:rgb(16, 26, 15);
+}
+
+.menu {
+    background-color: #237A57;
+}
+
+
+
+.container {
+    p {
+        a {
+            text-decoration: none;
+            color:#13b876;
+        }
+    }
+}
+
+
+.divespacios {
+    margin-top: $margin-top-espacios;
+}
+
+.bienvenido h1 {
+    font-size: 60px;
+}
+
+
+.divespacios2 {
+    margin-top: $margin-top-espacios2;
+}
+
+.imagenes1 img {
+    width: 500px;
+    height: 600px;
+    width: 100%;
+}
+
+.tortas {
+    width: 100%;
+
+}
+
+
+.tortas2 {
+    width: 100%;
+    border-radius: $border-radius-bordesimg;
+}
+
+@media(min-width:768px) {
+    .tortas {
+        width: 100%;
+        height: 700px;
+        ;
+
+    }
+}
+
+nav a img {
+    height: 75px;
+    width: 90px;
+
+}
+
+.dona1{
+    border-radius: $border-radius-bordesimg;
+}
+.dona2{
+    border-radius: $border-radius-bordesimg;
+}
+
+
+.buttonend button span a {
+    color:black;
+    ;
+    text-decoration: none;
+    background-color: transparent
+}
+
+.buttonend {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background-color:#13b876;
+    border: none;
+    color:black;
+    ;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: $font-family-titulos;
+
+
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 20px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.t-efectos {
+    opacity: 0.5;
+}
+
+.t-efectos:hover {
+    opacity: 1.0;
+}
+
+
+/*Productos*/
+.card-body {
+    ul {
+        @include cartas
+    }
+}
+
+.card-body {
+    ul li {list-style: none;
+        font-family:'Lobster', cursive;
+
+    }
+}
+
+
+.cartas-sombras {
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+
+}
+
+.cartas-sombras:hover {
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+    box-shadow: 10px 10px 14px 2px rgba(23, 228, 40, 0.432);
+}
+
+
+.card-img-top {
+    background-color: #237A57;
+
+}
+
+.card-body {
+    background-color: #237A57;
+
+}
+
+
+.fotos img {
+    width: 270px;
+    height: 210px;
+    padding: 5px;
+
+}
+
+
+
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+
+
+.fotos2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+
+    img {
+        transition: all 5s;
+        transform: skewY(5deg)
+    }
+
+}
+
+
+.foto1 {
+    @include tamaño;
+}
+
+.foto2 {
+    @include tamaño;
+}
+
+.foto3 {
+    @include tamaño;
+}
+
+.foto4 {
+    @include tamaño;
+}
+
+.foto5 {
+    @include tamaño;
+}
+
+.foto6 {
+
+    @include tamaño;
+}
+
+.foto7 {
+    @include tamaño;
+}
+
+.foto8 {
+    @include tamaño;
+}
+
+
+/*pie pagina*/
+.pie {
+    position: relative;
+    padding-top: 20px;
+    padding: 20px;
+    background-color: $background-color-pie;
+    
+}
+
+.pie p {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 8%;
+
+
+
+}
+
+.redes-sociales img {
+
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+.redes-sociales img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+
+//carrito
+.fuente-carrito{
+    color:black;
+    border: #075234;
+    
+    
+}
+.logocarritoo{
+    height: 35px;
+    width: 40px;
+
+}
+
+.gracias{
+    font-size: 80px;
+    background-color: #075234;
+}
+
+.botonComprar 
+ { color: yellow; }

@@ -1,0 +1,64 @@
+[{
+    "id":"1",
+    "nombre":"Hamburguesa americana",
+    "precio":500,
+    "imagen":"imagenes/burgue1.jpg",
+    "categoria": "carne",
+    "ingredientes":["Pan","Panceta","Medallon de carne","Doble queso"]
+ },
+ {
+    "id":"2",
+    "nombre":"Hamburguesa tradicional",
+    "precio":450,
+    "imagen":"imagenes/burgue2.jpg",
+    "categoria": "carne",
+    "ingredientes":["Pan","Huevo frito","Medallon de carne","Doble cheddar"]
+ },
+ {
+    "id":"3",
+    "nombre":"Hamburguesa de papa",
+    "precio":550,
+    "imagen":"imagenes/burgue3.jpg",
+    "categoria": "carne",
+    "ingredientes":["Pan de papa","Cebolla caramelo","Medallon de carne","Doble queso"]
+ },
+ {
+    "id":"4",
+    "nombre":"Hamburguesa edy",
+    "precio":650,
+    "imagen":"imagenes/burgue4.jpg",
+    "categoria": "carne",
+    "ingredientes":["Pan parmesano","Doble Panceta","Doble de carne","Doble cheddar"]
+ },
+ {
+    "id":"5",
+    "nombre":"Hamburguesa veggie",
+    "precio":400,
+    "imagen":"imagenes/burgue5.jpg",
+    "categoria": "vegetariana",
+    "ingredientes":["Pan","Pepino","Medallon de soja","Doble queso"]
+ },
+ {
+    "id":"6",
+    "nombre":"Hamburguesa simple",
+    "precio":350,
+    "imagen":"imagenes/burgue6.jpg",
+    "categoria": "vegetariana",
+    "ingredientes":["Pan","Cebolla","Medallon de soja","Lechuga"]
+ },
+ {
+    "id":"7",
+    "nombre":"Hamburguesa quinoa",
+    "precio":450,
+    "imagen":"imagenes/burgue7.jpg",
+    "categoria": "vegetariana",
+    "ingredientes":["Pan parmesano","Tomate","Medallon de quinoa","Doble cheddar"]
+ },
+ {
+    "id":"8",
+    "nombre":"Hamburguesa palta",
+    "precio":500,
+    "imagen":"imagenes/burgue8.jpg",
+    "categoria": "vegetariana",
+    "ingredientes":["Pan","Palta","Medallon de quinoa","Doble cheddar"]
+ }]

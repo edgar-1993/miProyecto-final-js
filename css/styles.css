@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.imagenes img {
+  width: 250px;
+  height: 250px;
+  margin-left: 10px; }
+
+.imagen2 img {
+  width: 200px;
+  height: 200px;
+  margin-left: 2%; }
+
+.containerimage img {
+  width: 270px;
+  height: 210px;
+  border-radius: 10%; }
+
+.gridcontenedor {
+  display: grid;
+  grid-template-columns: 5fr 5fr 5fr;
+  grid-row-gap: 7fr;
+  align-items: center;
+  margin: 30px;
+  column-gap: 5%;
+  padding: 15px; }
+
+h2 {
+  padding: 30px;
+  font-family: "Montserrat", sans-serif; }
+
+/*Quienes somos*/
+.subtitulo1 {
+  padding: 30px;
+  font-family: "Montserrat", sans-serif; }
+
+.gridcontenedor2 {
+  display: grid;
+  grid-template-columns: 10fr 10fr 10fr;
+  column-gap: 4em;
+  margin: 5%; }
+
+/*Productos*/
+.listas {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  padding: 5%; }
+
+.listas li {
+  list-style: none; }
+
+.listas {
+  background-color: #23c8f1;
+  padding: 10px; }
+
+.fotos img {
+  width: 270px;
+  height: 210px;
+  padding: 10px;
+  border-radius: 15%; }
+
+.fotos img {
+  transition: all 5s; }
+
+.fotos {
+  align-items: center; }
+
+.fotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly; }
+
+.fotos2 img {
+  width: 270px;
+  height: 210px;
+  padding: 10px;
+  border-radius: 15%; }
+
+.fotos2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly; }
+
+.fotos2 img {
+  transition: all 5s;
+  transform: skewY(5deg); }
+
+.foto1 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: min-content; }
+
+.foto2 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: min-content; }
+
+.foto3 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: min-content; }
+
+.foto4 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: min-content; }
+
+.foto5 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: min-content; }
+
+.foto6 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: min-content; }
+
+.foto7 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: min-content; }
+
+.foto8 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: min-content; }
+
+/*Nuestro servicios*/
+.servicios1 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 20px; }
+
+.servicios1 img {
+  width: 50px; }
+
+.servicios2 {
+  position: relative;
+  display: flex;
+  justify-content: center; }
+
+h2 {
+  text-align: center; }
+
+/*Contacto*/
+/*pie pagina*/
+.pie {
+  position: relative;
+  padding-top: 20px;
+  padding: 30px;
+  background-color: #77A1D3;
+  margin-top: 20%; }
+
+.pie {
+  display: flex;
+  justify-content: space-between; }
+
+.redes1 {
+  width: 5%; }
